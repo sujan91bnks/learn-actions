@@ -1,0 +1,11 @@
+name: workflow learn first
+on:
+  push:
+    branches:
+      - main
+jobs:
+  runs-on: ubuntu-latest
+  steps:
+    - name: checkout repo
+      uses: actions/checkout@v2
+      run: echo "This is job one done"
